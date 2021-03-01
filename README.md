@@ -2,8 +2,4 @@
 
 ### Сборка автотестов в Jenkins с Allure-отчетом и аттачем видео .
 
-1. Добавить конфиг для запуска в selenoid, адрес selenoid передать параметром из терминала
-   
-2. Добавить аттачи для Allure - скриншот, page source, console.log и видео
-   
-3. Сделать сборку в Jenkins с передачей адреса селеноида параметром
+https://github.com/svasenkov/allure-piechart-telegram
