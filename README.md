@@ -3,3 +3,5 @@
 ### Сборка автотестов в Jenkins с Allure-отчетом и аттачем видео .
 
 https://github.com/svasenkov/allure-piechart-telegram
+
+![alt text](screenshots/216.png)
