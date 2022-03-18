@@ -16,7 +16,7 @@ public class TestBase {
     static void setup() {
         addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.startMaximized = true;
+        Configuration.browserSize = "1920x1080";
 
         if(System.getProperty("remote_driver") != null) {
             // config for Java + Selenide
@@ -25,19 +25,6 @@ public class TestBase {
             capabilities.setCapability("enableVideo", true);
             Configuration.browserCapabilities = capabilities;
             Configuration.remote = System.getProperty("remote_driver");
-
-            // config for Java + Selenium
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability("browserName", "chrome");
-//        capabilities.setCapability("browserVersion", "87.0");
-//        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-//                "enableVNC", true,
-//                "enableVideo", true
-//        ));
-//        RemoteWebDriver driver = new RemoteWebDriver(
-//                URI.create("http://selenoid:4444/wd/hub").toURL(),
-//                capabilities
-//        );
         }
     }
 
